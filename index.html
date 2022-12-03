@@ -5,38 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+   <link href="css/styles.css" rel="stylesheet">
+
+
 </head>
     <body>
     
         <header>
-
+            
             <nav> <!--Creates nav with image, list and search-->
                 <div class="container">
-                    <img src="images/logo.png" alt="Logo">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a class="home" href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <form>
-                        <input type="search">
+                   
+                    <form class="forma" >
+                        <input type="search" placeholder="Search">
                         <button>
                             &#128269;
                         </button>
 
                         
                     </form>
+                    
                 </div> <!--End Container-->
             </nav>
 
+        
+
             <div class="header-welcome">
-                <img src="images/main-banner.jpg" alt="mainbanner">
                 <div class="container">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-                    <button>Connect With Us ▶ </button>
+                    <button class="button2">Connect with us ▶ </button>
                 </div> <!--End Container-->
             </div>
 
@@ -51,9 +64,9 @@
                      
                     <div>
                         <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
                     </div>
                     <!-- two inner divs, one with an image, the other with a heading and some text-->
                 </div> <!--end container-->
@@ -63,7 +76,7 @@
                 <div class="container">
                     <h2>Our Services</h2>
                     <div class="img-digital">
-                        <img src="images/digital.jpg" alt="Digital">
+                        <img src="images/digital.jpg" alt="Digital">                    
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                         <button>Digital Plans ▶</button>
@@ -96,14 +109,15 @@
                 </div> <!--end container-->
             </section> <!--end section-services-->
 
-            <section class="section-vison"> <!-- Creates vison section with header, paragraph,image-->
-                <div class="container">
-                    <img src="images/vision.jpg" alt="Vision">
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-                    <button>Learn More ▶</button>
+            <section class="section-vision"> <!-- Creates vison section with header, paragraph,image-->
+                
+                    <div class="container">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
+                        <button>Learn More ▶</button>
                     <!-- h3, p, button-->
-                </div> <!--end container-->
+                    
+                </div><!--end container-->
             </section> <!--end section-vison-->
 
             <section class="section-team"> 
@@ -111,20 +125,21 @@
                     <h2>Our Team</h2>
                         <div class="img-john">
                             <img src="images/john.jpg" alt="John">
-                        </div>
-                        <div>
+                        
+                        
                             <h3>John Doe</h3>
                             <h4>CEO and Co-Owner</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
                         </div>
-                        <div>
+                        
+                        <div class="img-bob">
+                            <img src="images/bob.jpg" alt="Bob">
+                            
                             <h3>Bob Rite</h3>
                             <h4>CFO and Co-Owner</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
                         </div>
-                        <div class="img-john">
-                            <img src="images/bob.jpg" alt="Bob">
-                        </div>
+                    
                     <!--h2,h3,h4 img or p -->
                 </div> <!--end container-->
             </section> <!--end section-team-->
@@ -136,39 +151,50 @@
                         <h3>Send us a message</h3>
                         <form action="/action_page.php">
                             <label for="fname">Full name:</label><br>
-                            <input type="text" id="fname" name="fname" ><br>
+                            <input class="input" type="text" id="fname" name="fname" ><br>
                             <label for="lemail">Email:</label><br>
-                            <input type="text" id="lemail" name="lemail" ><br>
+                            <input class="input" type="text" id="lemail" name="lemail" ><br>
                            
                             <div class="message">
                                 <label for="ymessage">Your Message</label>
                            </div>
                            <textarea id="ymessage"></textarea>
-                          </form> 
+                           <button>Send</button>
+                        </form> 
+                          
+                    </div>
+                </div>
+            </section>
 
-                    </div>
-                    <div class="location"> <!-- creates header and embedds google maps location-->
-                        <h3>Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044977!2d-75.75712548460005!3d45.349931549082136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669155914771!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="table"> <!-- creates header, table with 3 rows and 6 cells-->
-                        <h3>Hours of operation</h3>
-                        <table>
-                            <tr>
-                              <th>Days</th>
-                              <th>Hours</th>                       
-                            </tr>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>                           
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                          </table>
-                    </div>
-                    <!--heading and three divs with a form,a map embed, and a table for the hours of operation -->
+                <section class="section-table">
+                    <div class="container">
+                        <div class="table"> <!-- creates header, table with 3 rows and 6 cells-->
+                            <h3>Hours of operation</h3>
+                            <table>
+                                <tr>
+                                <th>Days</th>
+                                <th>Hours</th>                       
+                                </tr>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>                       
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>   
+                </section>    
+                    <!--heading and three divs with a form,a map embed, and a 
+                        table for the hours of operation -->
+            <section class="section-location">
+                    <div class="container"> <!-- creates header and embedds google maps location-->
+                            <h3>Location</h3>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044977!2d-75.75712548460005!3d45.349931549082136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669155914771!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                 </div> <!--end container-->
             </section> <!--end section-contact-->
            </main>
@@ -176,7 +202,7 @@
         <footer> <!-- creates footer with copyright and reference-->
             <div class="container">
                 <p>&#169; Copyright Three Star Media, 2020</p>
-                <p>All images are taken from Unsplash</p>
+                <p>All images are taken from <span class="unsplash"><span>Unsplash</span></p>
                 <!--some text-->
             </div> <!--end container-->
 
