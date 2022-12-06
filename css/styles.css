@@ -101,6 +101,7 @@ img {
 
 
  .container{
+	max-width: 1200px;
 	padding: 1em;
  }
 
@@ -113,38 +114,65 @@ img {
 
  
  nav{
-
 	background:#222222;
+	
+	
 
 }
  
  nav a {
 	font-size: 18px;
 	color:#c78b07;
-	text-align: center;
-	display: block;
+	text-align:center;
+	display:block;
 	width:100%;
 	text-decoration: none;
 	padding-top:18px;
 	padding-bottom:18px;
  }
 
+ nav a:link,
+nav a:visited{
+    font-size: 18px;
+    color: #c78b07;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+nav .current a:link,
+nav .current a:visited {
+    color: black;
+    background-color: #c78b07;
+}
+
 .home{
 	color:#000000
  }
 
  
-.forma {
+form {
 	display: flex;
 	align-items: stretch;
-	width: 95%;
+	width: 100%;
+	height: 40px;
 	
 
 }
 
-.forma input{
-	width: 100%;
-	height: 50px;
+form input{
+	width: 94%;
+	height: 40px;
+}
+
+form button{
+	
+	height: 40px;
+	width: 5%;
+
+
 }
  
 
@@ -194,6 +222,7 @@ img {
 
 .section-services img {
 	width: 100%;
+	height:auto
 }
 
 .section-services p {
@@ -238,7 +267,7 @@ img {
 
 .img-print {
 	background-color: #ffe6ac;
-	margin-bottom: 35px;
+	margin-bottom: 14px;
 }
 
 /* Vision Section */
@@ -306,7 +335,7 @@ img {
 
 
 
-.input {
+form .inputb {
 	width:99.5%;
 	margin-left: 0px;
 	padding-left:0px;
@@ -389,37 +418,98 @@ table, th, td {
 
 
 
- 
+ @media screen and (min-width: 760px){
+	.container {
+		width:706px;
+		margin: 0 auto;
+	}
+ }
 
 
 /* desktop styles */
 
-@media screen and (min-width: 706px){
+@media screen and (min-width: 1200px){
 	.container{
-		width: 1140px;
+		width: 1168px;
 		margin: 0 auto;
-		display: flex;
-	}
-	.forma{ 
-		display: flex;
-		flex-direction: row;
-		margin-left: 50%;
-		width: 25%;
-	}
-
-	.forma button {
-		height: 50px;
-		width: 50px;
-	}
-
+		padding: 0 auto;
 		
+	}
+	/* grid layout )section services */
+	.section-services .container{
+		display:grid;
+		
+		grid-template-columns: 160px 160px 160px 160px 160px 160px;
+		grid-template-rows: 80px 665px 665px;
+		gap: 15px;
 
 	}
 
-
-		
-
-		
+	.item1{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
 	
+	.img-digital{
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.img-marketing{
+		grid-column-start: 4;
+		grid-column-end: 7;
+		grid-row-start:2;
+		grid-row-end: 3;
+	}
+
+	.img-video{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+	}
+
+	.img-webdev{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+	}
+
+	.img-print{
+		grid-column-start: 5;
+		grid-column-end: 7;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+	}
+
+
+
+
+
+
 	
+
 }
+
+	
+
+	
+		
+		
+			
+		
+	
+
+
+
+
+		
+
+		
+	
+	
+
