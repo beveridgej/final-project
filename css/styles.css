@@ -527,7 +527,7 @@ table, th, td {
 	    width: 80%;
 		padding-bottom: 20px;
 		padding-top: 30px;
-		margin-top: none;
+		
 		}
 
 		
@@ -635,7 +635,7 @@ h1 {
 		background-color: #ffe6ac;
 		padding-bottom: 0em;
 		margin-bottom: 5px;
-		text-align: ;
+		
 		
 		
 	}
@@ -736,7 +736,13 @@ h1 {
 		cursor: pointer;
 	}
 
-	
+	.section-contact{
+		margin-bottom: 1em;
+	}
+
+	footer{
+		margin-top: 1em;
+	}
 
 }
 
