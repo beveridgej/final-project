@@ -19,19 +19,22 @@
         <header>
             
             <nav> <!--Creates nav with image, list and search-->
-                <div class="container">
+                <div class="grid-test">
                     <div class="logo">
-                        <img src="images/logo.png" alt="Logo">
+                       <div class="star">
+                       <img src="images/logo.png" alt="Logo">
+                        </div>
                     </div>
+                    
                     <ul>
-                        <li><a class="home"  href="#">Home</a></li>
-                        <li><a   href="#">About Us</a></li>
-                        <li><a  href="#">Services</a></li>
+                        <li><a class="home"href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a  href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                    
-                    <form>
+                    <form class="lista">
                         <input type="search" placeholder="Search">
                         <button>
                             &#128269;
@@ -62,7 +65,7 @@
                         <img src="images/about-us.jpg" alt="About US">
                     </div>
                      
-                    <div>
+                    <div class="about">
                         <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
 
@@ -122,36 +125,50 @@
 
             <section class="section-team"> 
                 <div class="container">
-                    <h2>Our Team</h2>
-                        <div class="img-john">
-                            <img src="images/john.jpg" alt="John">
+                    <h2 class="team">Our Team</h2>
+                    
+                         <div class="img-john">
+                            <img  class="img-john" src="images/john.jpg" alt="John">
+                        </div>
+                        <div class="john-doe">
+
                         
-                        
+                        <div class="john-ceo">
                             <h3>John Doe</h3>
                             <h4>CEO and Co-Owner</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
                         </div>
-                        
+                    </div>
+
+                       
+                     
+
                         <div class="img-bob">
                             <img src="images/bob.jpg" alt="Bob">
+                        </div>
+                        
+                        <div class="bob-rite"> 
+                        
                             
                             <h3>Bob Rite</h3>
                             <h4>CFO and Co-Owner</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                        </div>
+                        
+                    </div>
+                    
                     
                     <!--h2,h3,h4 img or p -->
                 </div> <!--end container-->
             </section> <!--end section-team-->
 
             <section class="section-contact"> <!-- Creates headers, and contact form/message area-->
-                <div class="container">
-                    <h2>Contact Us</h2>
+                <div class="container" >
+                    <h2 class="contact">Contact Us</h2>
                     <div class="message">
                         <h3>Send us a message</h3>
-                        <form action="/action_page.php">
+                        <form class="input" action="/action_page.php">
                             <label for="fname">Full name:</label><br>
-                            <input class="inputb" type="text" id="fname" name="fname" ><br>
+                            <input class="input" type="text" id="fname" name="fname" ><br>
                             <label for="lemail">Email:</label><br>
                             <input class="input" type="text" id="lemail" name="lemail" ><br>
                            
@@ -161,42 +178,34 @@
                            <textarea id="ymessage"></textarea>
                            <button>Send</button>
                         </form> 
-                          
                     </div>
+                    <div class="hours">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <tr>
+                            <th>Days</th>
+                            <th>Hours</th>                       
+                            </tr>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>                       
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="map"> <!-- creates header and embedds google maps location-->
+                        <h3>Location</h3>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044977!2d-75.75712548460005!3d45.349931549082136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669155914771!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div> <!--end container-->
                 </div>
             </section>
 
-                <section class="section-table">
-                    <div class="container">
-                        <div class="table"> <!-- creates header, table with 3 rows and 6 cells-->
-                            <h3>Hours of operation</h3>
-                            <table>
-                                <tr>
-                                <th>Days</th>
-                                <th>Hours</th>                       
-                                </tr>
-                                <tr>
-                                    <td>Monday - Friday</td>
-                                    <td>9 AM - 6 PM</td>                       
-                                </tr>
-                                <tr>
-                                    <td>Saturday - Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>   
-                </section>    
-                    <!--heading and three divs with a form,a map embed, and a 
-                        table for the hours of operation -->
-            <section class="section-location">
-                    <div class="container"> <!-- creates header and embedds google maps location-->
-                            <h3>Location</h3>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044977!2d-75.75712548460005!3d45.349931549082136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669155914771!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                </div> <!--end container-->
-            </section> <!--end section-contact-->
+                
            </main>
 
         <footer> <!-- creates footer with copyright and reference-->
