@@ -277,7 +277,7 @@ nav .current a:visited {
 
 /* Vision Section */
 
-.section-vision .container{
+.section-vision .vision{
 	background-image: url(../images/vision.jpg);
 	background-position: center;
 	background-size: cover;
@@ -440,7 +440,7 @@ table, th, td {
 
 	.grid-test {
 		display: grid;
-		grid-template-columns: 400px 600px 200px;
+		grid-template-columns: 400px 600px 150px;
 		
 	}
 	
@@ -455,7 +455,7 @@ table, th, td {
 
 	ul{
 		padding-top: 40px;
-		padding-right: 200px;
+		padding-right: 180px;
 	}
 	
 	nav a{
@@ -613,8 +613,9 @@ h1 {
 	
  }
 
- .section-vision .container{
+ .section-vision .vision{
 	margin-bottom: 1em;
+	
 
 	
 
@@ -737,13 +738,10 @@ h1 {
 	}
 
 	.section-contact{
-		margin-bottom: 1em;
+		padding-bottom: 1em;
 	}
 
-	footer{
-		margin-top: 1em;
-	}
-
+	
 }
 
 	
