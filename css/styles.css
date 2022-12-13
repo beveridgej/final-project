@@ -683,6 +683,8 @@ h1 {
 		text-align:left;
 	}
 	
+	/*contact section*/
+	
 	.section-contact .container{
 		display:grid;
 		grid-template-columns: 1fr 1fr ;
